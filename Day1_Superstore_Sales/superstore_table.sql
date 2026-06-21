@@ -1,0 +1,27 @@
+
+USE superstore;
+DROP TABLE IF EXISTS superstore_sales ;
+
+CREATE TABLE superstore_sales(
+row_id INT,
+order_id VARCHAR(50),
+order_date DATE, 
+ship_date DATE,
+ship_mode VARCHAR(50),
+customer_id VARCHAR(50),
+customer_name VARCHAR(100), 
+segment VARCHAR(20),
+country VARCHAR(20),
+city VARCHAR(50),
+state VARCHAR(50),
+postal_code VARCHAR(50), 
+region VARCHAR(50),
+product_id VARCHAR(50),
+category VARCHAR(50),
+subcategory VARCHAR(50),
+product_name VARCHAR(255),
+sales DECIMAL(10,2),
+quantity INT,
+discount DECIMAL(5,2),
+profit DECIMAL(10,2)
+);
